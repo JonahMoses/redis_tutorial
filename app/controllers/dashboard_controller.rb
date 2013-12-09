@@ -1,4 +1,5 @@
 class DashboardController < ApplicationController
+
   def show
     @articles = Article.for_dashboard
     @article_count = Article.count
@@ -9,4 +10,5 @@ class DashboardController < ApplicationController
     @comment_count = Comment.count
     @comment_word_count = Comment.total_word_count
   end
+
 end
